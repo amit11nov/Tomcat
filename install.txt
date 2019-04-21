@@ -1,0 +1,12 @@
+Procedure to Setup Jenkins on Tomcat
+=====================================
+1) Download Tomcat above 7 version.
+2) Put it anywhere after extracting in system.
+3) Go to path tomcat/bin & run startup command from windows to start tomcat standaloneon 8080 (default port).
+4) As we are setting up jenkins on Tomcat, put jeknins.war file inside tomcat\webapps folder and start the tomcat on port 9090 and start jenkins on 8080.
+
+go to path where jenkins.war file available and run:- java -jar jenkins.war
+and go to tomact\bin and start tomcat on 9090 port. in windows by running:-  startup --httpPort=9090
+goto url localhost:8080 & 9090 and see jenkins and tomcat started up.
+copy all files from jenkins folder to new folder jenkins inside tomcat path.
+Now using tomcat we can deploy multiple application or works on jenkins.
